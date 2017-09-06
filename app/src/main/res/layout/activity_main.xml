@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context="com.yrevajc.lifecount.MainActivity">
+
+    <com.yrevajc.lifecount.FlippedRelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#a4a0c6"
+        android:rotation="180">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/healthCount1"
+            android:textColor="#ffffff"
+            android:textSize="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-"
+            android:textSize="70dp"
+            android:id="@+id/minusHealth1"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/healthCount1"
+            android:layout_toLeftOf="@+id/healthCount1"
+            android:layout_alignTop="@+id/healthCount1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="+"
+            android:textSize="70dp"
+            android:gravity="center"
+            android:id="@+id/plusHealth1"
+            android:layout_alignTop="@+id/healthCount1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/healthCount1"
+            android:layout_toRightOf="@+id/healthCount1"
+            android:layout_toEndOf="@+id/healthCount1" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 1"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:background="@android:color/transparent"
+            android:id="@+id/playerOne"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </com.yrevajc.lifecount.FlippedRelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A9A9A9">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/restartLife"
+            android:background="@drawable/rotate"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="Roll20"-->
+            <!--android:gravity="center"-->
+            <!--android:id="@+id/textView4"-->
+            <!--android:textSize="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentTop="true" />-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2e97a9"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="20"
+            android:fontFamily="sans-serif-thin"
+            android:id="@+id/healthCount2"
+            android:textColor="#ffffff"
+            android:textSize="100dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="-"
+            android:textSize="70dp"
+            android:id="@+id/minusHealth2"
+            android:gravity="center"
+            android:layout_alignBottom="@+id/healthCount2"
+            android:layout_toLeftOf="@+id/healthCount2"
+            android:layout_alignTop="@+id/healthCount2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="+"
+            android:textSize="70dp"
+            android:gravity="center"
+            android:id="@+id/plusHealth2"
+            android:layout_alignTop="@+id/healthCount2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/healthCount2"
+            android:layout_toRightOf="@+id/healthCount2"
+            android:layout_toEndOf="@+id/healthCount2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Player 2"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:id="@+id/playerTwo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
